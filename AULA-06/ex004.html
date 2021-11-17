@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000000ff;
+            font: normal 20pt Gotham;
+        }
+
+        h1 {
+            color: #ea558dff;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <script>
+        /*
+        var name = window.prompt('Digite uma palavra para saber qunatas letras tem')
+        document.write(`<h1>A palavra ${name} tem ${name.length} letras.</h1>`)
+        */
+
+        var valor = Number.parseFloat(window.prompt('Digite um valor'))
+        document.write(`<h1>O valor é ${valor}</h1><br>`)
+        document.write(`<h1>Pode ser assim ${valor.toFixed(2)}</h1>`)
+        document.write(`<h1>Pode ser assim ${valor.toFixed(2).replace('.',',')}</h1>`)
+
+    </script>
+    
+</body>
+</html>
