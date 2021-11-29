@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Events</title>
+    <style>
+        body{
+            font: normal 15pt Gotham;
+            background: #121212;
+            color: white;
+        }
+
+        div#work {
+            font: bold 15pt Gotham;
+            background: green;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="work">
+        Predict Studio
+    </div>
+
+    <script>
+        var slot = window.document.getElementById('work');
+        slot.addEventListener('click', change);
+        slot.addEventListener('mouseenter', dentro);
+        slot.addEventListener('mouseout', fora);
+
+        function change(){           
+            slot.innerText = 'Bahia Perdeu DNV'
+            slot.style.background = 'red'
+        }
+
+        function dentro(){            
+            slot.innerText = 'Calango'
+        }
+
+        function fora(){            
+            slot.innerText = 'Baiano'
+        }
+
+    </script>
+</body>
+</html>

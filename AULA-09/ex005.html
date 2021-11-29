@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Model</title>
+    <style>
+        body{
+            font: normal 15pt Gotham;
+            background: #121212;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <h1>Hello D-O-M</h1> 
+   <p class="title-1">Document Object Model</p>
+   <p>Learning with <strong>DOM</strong> in JavaScript</p>
+   <div id='click-buttom'>Click-Me</div>
+
+   <script>
+       var pool = window.document.getElementsByTagName('p')[1];
+       window.document.write('Isso é -> ' + pool.innerText);
+       pool.style.color = 'red'
+       
+       //# -> ID ----- . -> Class
+
+       var start = window.document.querySelector('.title-1');
+       document.write(start.innerHTML)
+
+   </script>
+</body>
+</html>
