@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+    <style>
+        body{
+            font: normal 15pt Gotham;
+            background: #121212;
+            color: white;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Passaporte Online</h1>
+    <p>Insira o seu País de Origem</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Consultar" onclick="consultar()">
+    <p id="resultado"></p>
+
+    <script>
+        function consultar() {
+            var paisOrigem = document.getElementById('pais').value
+            var resultadoPais = document.getElementById('resultado')
+            if (paisOrigem == 'Brasil') {
+                document.getElementById('resultado').innerHTML = 'Você é <strong>Brasileiro</strong>, seja Bem Vindo!'
+            }else{
+                document.getElementById('resultado').innerHTML = 'Você é <strong>Estrangeiro</strong>, pague uma taxa de R$5,00!'
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

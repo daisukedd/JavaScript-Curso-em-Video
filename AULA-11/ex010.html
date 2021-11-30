@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN🚔</title>
+    <style>
+        body{
+            text-align: center;
+            height: 500px;
+            width: 700px;
+            padding: 20px;
+            font: normal 15pt Gotham;
+            background: #121212;
+            color: white;
+            border: solid 4px white;
+        }
+
+        #txtvel {
+            width: 100px;
+        }
+
+        #buttom-consultar {
+            font: normal 10pt Gotham;
+            background: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚔 Segunda Via de Multas🚔</h1>
+    Velocidade do Carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Consultar" id="buttom-consultar" onclick="calcular()" keydown>
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+        var txtv = document.getElementById('txtvel')
+        var res = document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        console.log(vel)
+        res.innerHTML = `Sua velocidade atual é <strong>${vel}Km/h</strong>`
+        if (vel > 45) {
+            res.innerHTML += `<p>Você está <strong>multado</strong> por excesso de velocidade!</p>`
+        }
+        res.innerHTML += `<p>Dirija sempre com cuidado!</p>`
+
+        }
+    </script>
+    
+</body>
+</html>
