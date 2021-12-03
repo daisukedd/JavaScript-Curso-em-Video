@@ -19,8 +19,8 @@ section {
 }
 
 div {
-    color: red;
     text-align: center;
+    padding: 5px;
 }
 
 footer {
