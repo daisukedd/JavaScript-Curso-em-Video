@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Day</title>
+</head>
+<body>
+    <h1>Roda no Console</h1>
+    <script>
+        var horaLocal = new Date()
+        var hour = horaLocal.getHours()
+        var newDate = console.log(horaLocal.getFullYear())
+        console.log(hour)
+        if (hour < 12){
+            console.log('Good Morning!')
+        }else if (hour <= 18) {
+            console.log('Good Afternoon!')
+        }else {
+            console.log('Good Night!')
+        }
+    </script>
+    
+</body>
+</html>
