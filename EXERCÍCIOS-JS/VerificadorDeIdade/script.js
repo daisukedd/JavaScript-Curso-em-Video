@@ -26,18 +26,17 @@ function verificar() {
         } else if (fsex[1].checked) {
             genero = 'Feminino'
             if (idade >=0 && idade < 10) {
-                //KID
-                console.log('KID')
+                img.setAttribute('src', './assets/foto-bebe-f.png')
             } else if (idade < 21) {
-                //Teen
+                img.setAttribute('src', './assets/foto-jovem-f.png')                
             } else if (idade < 50) {
-                //Adult
+                img.setAttribute('src', './assets/foto-adulto-f.png')
             } else {
-                //Old
+                img.setAttribute('src', './assets/foto-idoso-f.png')
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Você é ${genero} de ${idade} Anos!`
+        res.innerHTML = `Dectamos ${genero} de ${idade} Anos!`
         res.appendChild(img).style.padding = '15px'
     }
 }
