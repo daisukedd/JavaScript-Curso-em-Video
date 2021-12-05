@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font: normal 12px Gotham;
+        }
+    </style>
+</head>
+<body onload="alertando()">
+    <h1>Roda no Console!</h1>
+    <div id="show">
+
+    </div>
+    <script>
+        function alertando() {
+            console.log('Código Rodando!')
+            for (var b = 1;b <= 5; b++){
+                console.log(`Valor ${b} OK`)
+                var mostrar = document.getElementById('show')
+                //mostrar.innerHTML = document.write(`Valor ${b} OK`) Isso nao deu muito certo
+
+            }
+
+        }
+        
+    </script>
+    
+</body>
+</html>
